@@ -13,7 +13,7 @@ class ProducerDemoApplicationTests {
 
     @Test
     void contextLoads() {
-        this.rabbitTemplate.convertAndSend("spring_test_exchange", "ab", "hello rabbitmq....");
+        this.rabbitTemplate.convertAndSend("spring_test_exchange2", "msg.test", "hello rabbitmq....");
         System.out.println("消息已发送------------------->");
     }
 
